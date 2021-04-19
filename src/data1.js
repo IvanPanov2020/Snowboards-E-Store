@@ -91,7 +91,7 @@ export const items = [
     inCart: false,
     count: 0,
     total: 0,
-    type: "snowboards",
+    type: "c",
   },
   {
     id: 3,
