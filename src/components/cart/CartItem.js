@@ -45,7 +45,7 @@ export default function CartItem({ item, value }) {
       </div>
       <div className="col-10 mx-auto col-lg-2">
         <button className="all-btn" onClick={() => remuveItem(id)}>
-          Remuve Item
+          Remove Item
         </button>
       </div>
       <div className="col-10 mx-auto col-lg-2">
