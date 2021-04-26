@@ -12,7 +12,7 @@ export default function SingIn() {
   );
   const [error, setError] = useState("");
 
-  const Login = (details) => {
+  const logIn = (details) => {
     const user = useracc.find(
       (x) => x.email === details.email && x.password === details.password
     );
@@ -24,7 +24,7 @@ export default function SingIn() {
     }
   };
 
-  const Logout = () => {
+  const logOut = () => {
     console.log("Logaout");
     setUser(null);
     localStorage.removeItem("USER");
@@ -37,12 +37,12 @@ export default function SingIn() {
           <h2>
             Welcome, <span>{user.name}</span>
           </h2>
-          <button className="all-btn" onClick={Logout}>
+          <button className="all-btn" onClick={logOut}>
             Logout
           </button>
         </div>
       ) : (
-        <LoginForm Login={Login} error={error} />
+        <LoginForm Login={logIn} error={error} />
       )}
     </div>
   );
